@@ -1,0 +1,7 @@
+version: '3'
+services:
+  bot:
+    image: filefrog/britbot:latest
+    environment:
+      BOT_TOKEN: ${BOT_TOKEN}
+      APP_TOKEN: ${APP_TOKEN}

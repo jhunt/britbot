@@ -1,0 +1,14 @@
+{
+  "name":        "britbot",
+  "version":     "0.1.0",
+  "description": "A Slack Bot for taunting the Brits",
+  "author":      "James Hunt <james@huntprod.com>",
+  "license":     "MIT",
+
+  "main": "index.js",
+  "scripts": {},
+
+  "dependencies": {
+    "@slack/bolt": "^3.10.0"
+  }
+}
