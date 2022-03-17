@@ -7,7 +7,6 @@ const app = new App({
   appToken:   process.env.APP_TOKEN,
 });
 
-const countryName = d => `*${d.country}*` + (d.previously ? ` (formerly _${d.previously}_)` : '')
 
 const dispatch = async (msg, say) => {
   if (msg.match(/fun fact/, 'i')) {
@@ -16,12 +15,12 @@ const dispatch = async (msg, say) => {
 
   if (msg.match(/next/, 'i')) {
     const h = brits.nextHoliday()
-    await say(`${countryName(h)} celebrates its indepedence from the crown on *${brits.prettyDate(h.date)}* :tada:`)
+    await say(`${brits.countryName(h)} celebrates its indepedence from the crown on *${brits.prettyDate(h.date)}* :tada:`)
   }
 
   if (msg.match(/just celebrated/, 'i')) {
     const h = brits.lastHoliday()
-    await say(`${countryName(h)} just celebrated their indepedence on *${brits.prettyDate(h.date)}* :confetti_ball:`)
+    await say(`${brits.countryName(h)} just celebrated their indepedence on *${brits.prettyDate(h.date)}* :confetti_ball:`)
   }
 }
 

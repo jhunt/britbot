@@ -15,6 +15,7 @@ module.exports = [
   },
   {
     country: 'Brunei',
+    iso: 'BN',
     date: new Date('1984-01-01'),
   },
   {
@@ -267,6 +268,7 @@ module.exports = [
   },
   {
     country: 'Zimbabwe',
+    iso: 'ZW',
     date: new Date('1980-04-18'),
     previously: 'Southern Rhodesia',
   },

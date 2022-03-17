@@ -62,6 +62,8 @@ const nextHoliday = () => dates.find(d => afterToday(d.date)) || dates[0]
 const thisHoliday = () => dates.find(d => isToday(d.date))
 const lastHoliday = () => rdates.find(d => beforeToday(d.date)) || dates[0]
 
+const countryName = d => (d.iso ? `:flag-${d.iso.toLowerCase()}: ` : '') + `*${d.country}*` + (d.previously ? ` (formerly _${d.previously}_)` : '')
+
 /*
 console.dir(nextHoliday())
 console.dir(thisHoliday())
@@ -142,4 +144,5 @@ module.exports = {
   thisHoliday,
   nextHoliday,
   prettyDate,
+  countryName,
 }
