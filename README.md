@@ -8,3 +8,7 @@ British Empire!
 
 Every ~6 days, another country celebrates their independence from
 the Empire.  God Save the Queen!
+
+(Turns out the above is not true, since lots of these holidays
+ cluster; I guess when one wants out, the neighbors want to go
+ along for the ride!)
