@@ -130,6 +130,8 @@ const funFacts = [
   () => `Did you know that ${dates.length} ${plural(dates.length, 'country has', 'countries have')} chosen *not* to be a part of the British empire?`,
 
   () => `Independence from Britain brings the world together; it's celebrated once every ~${parseInt(365 / dates.length)} days _somewhere_ in the world!`,
+
+  () => `Fear not!  There are only 14 more crown territories / protectorates / what have you that can still rebel, so... they've got that going for them.`,
 ]
 
 const randn = max => parseInt(Math.random() * max)
